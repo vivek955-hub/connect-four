@@ -4,7 +4,7 @@ export default function Leaderboard() {
   const [board, setBoard] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/leaderboard')
+    fetch('https://connect-four-van4.onrender.com/api/leaderboard')
       .then(r => r.json())
       .then(data => {
         if (data.success) {
