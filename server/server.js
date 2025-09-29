@@ -17,7 +17,7 @@ const apiRoutes = require('./routes/api');
 const GameManager = require('./lib/gameManager');
 
 const PORT = process.env.PORT || 4000;
-const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173';
+const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'https://connect-four-eight-wine.vercel.app';
 
 const app = express();
 app.use(express.json());
