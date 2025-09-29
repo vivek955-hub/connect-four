@@ -42,7 +42,7 @@ const io = new Server(server, {
 });
 
 // connect to MongoDB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/connect_four';
+const MONGODB_URI ='MONGODB_URI=mongodb+srv://vivekreddy701327_db_user:63CjGHGZioTJAAst@clustervivek.6lreuz0.mongodb.net/connect_four';
 mongoose.connect(MONGODB_URI).then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => {
