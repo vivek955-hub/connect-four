@@ -16,11 +16,11 @@ const { Server } = require('socket.io');
 const apiRoutes = require('./routes/api');
 const GameManager = require('./lib/gameManager');
 
-const cors = require('cors');
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://connect-four-rma3.vercel.app'],
-  credentials: true
-}));
+// const cors = require('cors');
+// app.use(cors({
+//   origin: ['http://localhost:5173', 'https://connect-four-rma3.vercel.app'],
+//   credentials: true
+// }));
 
 
 const PORT = process.env.PORT || 4000;
