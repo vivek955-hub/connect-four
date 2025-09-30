@@ -16,8 +16,15 @@ const { Server } = require('socket.io');
 const apiRoutes = require('./routes/api');
 const GameManager = require('./lib/gameManager');
 
+const cors = require('cors');
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://connect-four-rma3.vercel.app'],
+  credentials: true
+}));
+
+
 const PORT = process.env.PORT || 4000;
-const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'https://connect-four-eight-wine.vercel.app';
+const CLIENT_ORIGIN = 'https://connect-four-rma3.vercel.app/';
 
 const app = express();
 app.use(express.json());
@@ -104,3 +111,4 @@ io.on('connection', (socket) => {
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
