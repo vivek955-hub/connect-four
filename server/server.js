@@ -24,7 +24,7 @@ const GameManager = require('./lib/gameManager');
 
 
 const PORT = process.env.PORT || 4000;
-const CLIENT_ORIGIN = 'https://connect-four-2.onrender.com';
+const CLIENT_ORIGIN = 'https://connect-four-rma3.vercel.app';
 
 const app = express();
 app.use(express.json());
